@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
-<html xmls="http://www.w3.org/1999/xhtml"
-	  xmls="http://xmlns.jcp.org/jsf/core"
-	  xmls="http://xmlns.jcp.org/jsf/html"
-	  xmls="hhtp://xmlns.jcp.org/jsf/facelets">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:f="http://xmlns.jcp.org/jsf/core"
+	  xmlns:h="http://xmlns.jcp.org/jsf/html"
+	  xmlns:ui="hhtp://xmlns.jcp.org/jsf/facelets">
 <f:view contentType="text/html">
 	<h:head>
 		<meta charset="UTF-8"/>
@@ -17,6 +17,7 @@
 		<ui:insert name="panel-top">
 			<section>
 				<h1>Welcome, visitor!</h1>
+				<p>Your <h:outputLink value="shopping-cart.xhtml">shopping cart</h:outputLink>is empty.</p>
 			</section>
 		</ui:insert>
 		<ui:insert name="panel-main">
