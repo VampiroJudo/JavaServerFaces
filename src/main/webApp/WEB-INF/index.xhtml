@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://xmlns.jcp.org/jsf/html"
+	  xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<ui:composition template="/templates/page=template.xhtml">
+	<ui:param name="pageTitle" value="Popular Products"/>
+	<ui:define name="panel main">
+		<section>
+			<h1>Popular Products</h1>
+			<h:form>
+				<section class="product-summary">
+					<img src="resources/musicshop/images/m16-microphone-120x120.jpg" alt="Microphone"/>
+					<h2>M-16 Microphone</h2>
+					<p>Essential for every vocalist - The M-16 Microphone is the ultimate in sound quality and ease of use.</p>
+					<p>Price - $ 95.00 - <h:commandLink>Add to cart</h:commandLink></p>
+					<p><h:outputLink value="product-details.xhtml">Product Details</h:outputLink></p>
+				</section>
+				<section class="product-summary">
+					<img src="resources/musicshop/images/les-paul-120x120.jpg" alt="LesPaul"/>
+					<h2>Les Paul Special</h2>
+					<p>The venurable and classic Les Paul Special will bring that vintage as well as new sound to life in true screaming rocker fashion!</p>
+					<p>Price - $ 3000.00 - <h:commandLink>Add to cart</h:commandLink></p>
+					<p><h:outputLink value="product-details.xhtml">Product Details</h:outputLink></p>
+				</section>
+		</section>	  
+	  </ui:define>
+	</ui:composition>
+</html>
