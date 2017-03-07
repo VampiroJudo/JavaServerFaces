@@ -9,21 +9,24 @@
 		<section>
 			<h1>Popular Products</h1>
 			<h:form>
-				<section class="product-summary">
-					<img src="resources/musicshop/images/m16-microphone-120x120.jpg" alt="Microphone"/>
-					<h2>M-16 Microphone</h2>
+				<ui:decorate template="/templates/product-summary.xhtml">
+					<ui:param name="imageName" value="microphone"/>
+					<ui:param name="productName" value="Microphone"/>
+					<ui:param name="productPrice" value="95.00"/>
+					<ui:define name="product-description">
 					<p>Essential for every vocalist - The M-16 Microphone is the ultimate in sound quality and ease of use.</p>
-					<p>Price - $ 95.00 - <h:commandLink>Add to cart</h:commandLink></p>
-					<p><h:outputLink value="product-details.xhtml">Product Details</h:outputLink></p>
-				</section>
-				<section class="product-summary">
-					<img src="resources/musicshop/images/les-paul-120x120.jpg" alt="LesPaul"/>
-					<h2>Les Paul Special</h2>
-					<p>The venurable and classic Les Paul Special will bring that vintage as well as new sound to life in true screaming rocker fashion!</p>
-					<p>Price - $ 3000.00 - <h:commandLink>Add to cart</h:commandLink></p>
-					<p><h:outputLink value="product-details.xhtml">Product Details</h:outputLink></p>
-				</section>
-		</section>	  
-	  </ui:define>
+					</ui:define>
+				</ui:decorate/>
+				<ui:decorate template="/templates/product-summary.xhtml">
+					<ui:param name="imageName" value="guitar"/>
+					<ui:param name="productName" value="Guitar"/>
+					<ui:param name="productPrice" value="3000.00"/>
+					<ui:define name="product-description">
+					<p>The venerable and classic Les Paul Special will bring that vintage as well as new sound to life in true screaming rocker fashion!</p>
+					</ui:define>
+				</ui:decorate/>
+		</section>
+	</ui:define>
 	</ui:composition>
 </html>
+
